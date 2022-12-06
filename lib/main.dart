@@ -25,7 +25,7 @@ class Home extends StatelessWidget{
                 width: double.infinity,
                 decoration: const BoxDecoration(
                   //color: Colors.blueGrey,
-                  image: DecorationImage(image: AssetImage("assets/Tour.jpeg"),fit: BoxFit.fill)
+                  image: DecorationImage(image: AssetImage("assets/tour_1.jpeg"),fit: BoxFit.fill)
                 ),
 
         ),
