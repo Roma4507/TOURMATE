@@ -7,13 +7,10 @@ class Homepage extends StatelessWidget{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text("Welcome tourist!"),
+        title: Text("Let's begin your journey"),
         backgroundColor: Colors.blueGrey[800],
       ),
-      body: InkWell(
-        onTap: (){
-          print("Let's begin your journey");
-        },
+      body: Material(
         child: Container(
           //width: MediaQuery.of(context).size.width,
 
