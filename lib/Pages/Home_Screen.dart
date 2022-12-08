@@ -17,9 +17,7 @@ class HomePage extends StatelessWidget{
         },
         child: Material(
           child: Container(
-            //width: MediaQuery.of(context).size.width,
-
-            height: double.infinity,
+                        height: double.infinity,
             width: double.infinity,
             decoration: const BoxDecoration(
               //color: Colors.blueGrey,
