@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tourmate/Pages/Home_Screen.dart';
 import 'package:tourmate/Pages/Login_page.dart';
+import 'package:tourmate/utils/route.dart';
+
 
 void main(){
   runApp(MyApp());
@@ -20,8 +22,8 @@ class MyApp extends StatelessWidget{
       ),
 
       routes: {
-        "/": (context)=>Loginpage(),
-        //"/login": (context)=>Loginpage()
+        MyRoutes.homeRoute: (context)=>HomePage(),
+        MyRoutes.loginRoute: (context)=>LoginPage()
       },
     );
   }

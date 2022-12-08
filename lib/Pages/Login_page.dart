@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Loginpage extends StatelessWidget{
+
+class LoginPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -27,7 +28,12 @@ class Loginpage extends StatelessWidget{
                       )
                     ),
                     const SizedBox(height: 20),
-                   ElevatedButton(onPressed: (){}, child: Text("Login"))
+                   ElevatedButton(child: Text("Login"),
+                       onPressed: (){},
+                     style:TextButton.styleFrom(backgroundColor: Colors.indigo[600])
+                   ),
+                    const SizedBox(height: 30),
+                   Text("Or signup",style: TextStyle(fontSize: 18,color: Colors.lightGreenAccent),)
                    // ElevatedButton(onPressed: onPressed, child: child)
                   ],
                 ),
