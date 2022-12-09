@@ -3,7 +3,7 @@ import 'package:tourmate/utils/route.dart';
 
 
 
-class HomePage extends StatelessWidget{
+class Start extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget{
         },
         child: Material(
           child: Container(
-                        height: double.infinity,
+            height: double.infinity,
             width: double.infinity,
             decoration: const BoxDecoration(
               //color: Colors.blueGrey,

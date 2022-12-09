@@ -1,10 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:tourmate/Pages/Home_Screen.dart';
 import 'package:tourmate/Pages/Login_page.dart';
+import 'package:tourmate/Pages/SignUp.dart';
+import 'package:tourmate/Pages/Start.dart';
 import 'package:tourmate/utils/route.dart';
+import 'package:tourmate/Pages/Homepage.dart';
 
 
-void main(){
+Future<void> main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -22,8 +27,10 @@ class MyApp extends StatelessWidget{
       ),
 
       routes: {
-        MyRoutes.homeRoute: (context)=>HomePage(),
-        MyRoutes.loginRoute: (context)=>LoginPage()
+        MyRoutes.start: (context)=>Start(),
+        MyRoutes.loginRoute: (context)=>Login(),
+        MyRoutes.signUp:(context)=>RegistartionScreen(),
+        MyRoutes.homeRoute:(context)=>HomePage()
       },
     );
   }
